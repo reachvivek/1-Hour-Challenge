@@ -12,6 +12,7 @@ body{
     text-align: center;
     padding: 5rem;
     min-height: 100vh;
+    transition: background 0.3s linear, color 0.3s linear
 }
 
 button{
@@ -28,4 +29,19 @@ button{
 body.dark{
     background-color: #1f1f1f;
     color: white;
+}
+
+.toggle-container{
+    top: 10px;
+    right: 10px;
+    position: fixed;
+    cursor: pointer;
+}
+
+label{
+    cursor: pointer;
+}
+
+#toggle{
+    visibility: hidden;
 }
