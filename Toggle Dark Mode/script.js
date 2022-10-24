@@ -1,7 +1,3 @@
-document.getElementById('btn').addEventListener('click', ()=>{
-    document.body.style.backgroundColor=randomBg()
+document.getElementById('toggle').addEventListener('change', (e)=>{
+    document.body.classList.toggle('dark', e.target.checked)
 })
-
-function randomBg(){
-    return `hsl(${Math.floor(Math.random()*360)}, 100%, 50%)`
-}
